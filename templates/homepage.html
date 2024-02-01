@@ -1,0 +1,74 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Home - Compare IPL</title>
+<style opacity=0.2>
+img {
+  opacity: 0.1;
+}
+
+.bat{
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: cyan;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+
+}
+
+.bat:hover {background-color: #3e8e41}
+
+.bat:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.bowl{
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: cyan;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+
+}
+
+.bowl:hover {background-color: #3e8e41}
+
+.bowl:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+body {
+    background-image: url('{% static "bgimg/blc.jpg" %}');
+    background-repeat: no-repeat;
+    background-size: 1400px 620px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<p align='center'><button onclick="location.href = './batsman';" class='bat' type="button">Batsman</button></p>
+<p align='center'><button onclick="location.href = './bowler';" class='bowl' type="button">Bowler</button></p>
+
+
+
+</html>

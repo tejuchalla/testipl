@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Home - Compare Batsman</title>
+
+</head>
+
+<body>
+
+<p>Batsman</p>
+
+</body>
+
+
+</html>

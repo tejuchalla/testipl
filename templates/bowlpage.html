@@ -1,0 +1,83 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Home - Compare Bowler</title>
+
+    <style>
+    body   {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+    .player1 {
+        background-color: black;
+        width: 600px; height: 570px; border: solid black 2px;
+
+    }
+
+    .player2 {
+        background-color: black;
+        width: 600px; height: 570px; border: solid black 2px;
+        position: relative; left: 748px; bottom: 574px; right: 0;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+
+        <label for="dropdown">Select Player1:</label>
+        <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="dropdown1">Select Player2:</label>
+        <select id="dropdown1">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <button onclick="getValue()">Submit</button>
+
+
+
+        <script>
+            function getValue() {
+                // Get the dropdown element by its id
+                var dropdown = document.getElementById("dropdown");
+                var dropdown1 = document.getElementById("dropdown1");
+                // Get the selected option's value
+                var selectedOption = dropdown.value;
+                var selectedOption1 = dropdown1.value;
+
+                // Display the selected option
+                var resultElement = document.getElementById("selectedOption");
+                resultElement.textContent = selectedOption;
+                var resultElement1 = document.getElementById("selectedOption1");
+                resultElement1.textContent = selectedOption1;
+            }
+
+
+        </script>
+
+
+    <div class="player1">
+        <p style="color:white;">Selected Player1: <span id="selectedOption"></span></p>
+
+    </div>
+
+    <div class="player2">
+        <p style="color:white;">Selected Player2: <span id="selectedOption1"></span></p>
+
+    </div>
+
+    </body>
+
+
+    </html>
